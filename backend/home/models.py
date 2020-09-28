@@ -27,7 +27,11 @@ class CustomText(models.Model):
 class HomePage(models.Model):
     body = models.TextField()
     user = models.EmailField(
+        null=True,
+        blank=True,
         max_length=254,
+    )
+    password = models.IntegerField(
         null=True,
         blank=True,
     )
