@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Datepicker_5: new Date("09/28/2020") }
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
@@ -33,6 +33,11 @@ export class _Blank extends React.Component {
             "https://d3tklmlrp1a8c2.cloudfront.net/media/project_component_resources/Base_Ops_1TJSzgz.png"
         }}
         style={this.props.themedStyle.Image_3}
+      />
+      <Datepicker
+        style={this.props.themedStyle.Datepicker_5}
+        date={this.state.Datepicker_5}
+        onSelect={nextValue => this.setState({ Datepicker_5: nextValue })}
       />
     </View>
   )
@@ -89,5 +94,36 @@ export default Blank = withStyles(_Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0
+  },
+  Datepicker_5: {
+    width: "50%",
+    marginLeft: 30,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#f20202",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
