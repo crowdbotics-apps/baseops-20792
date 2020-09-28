@@ -49,6 +49,23 @@ export class _Blank extends React.Component {
         value={this.state.Input_7}
         onChangeText={nextValue => this.setState({ Input_7: nextValue })}
       />
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen7114358")}
+      >
+        <Button
+          textStyle={{
+            fontSize: 12,
+            color: "#000000",
+            textAlign: "center",
+            fontWeight: "normal",
+            fontStyle: "normal"
+          }}
+          style={this.props.themedStyle.Button_9}
+          onPress={() => alert("Pressed!")}
+        >
+          Submit
+        </Button>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -156,6 +173,33 @@ export default Blank = withStyles(_Blank, theme => ({
     borderWidth: 2,
     borderRadius: 0,
     textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Button_9: {
+    width: "82%",
+    marginLeft: 55,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ff3333",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 2,
+    borderRadius: 0,
+    textAlign: "center",
     textAlignVertical: "center",
     textDecorationLine: "none",
     textTransform: "none",
