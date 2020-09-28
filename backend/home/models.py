@@ -26,6 +26,11 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
+    user = models.EmailField(
+        max_length=254,
+        null=True,
+        blank=True,
+    )
 
     @property
     def api(self):
