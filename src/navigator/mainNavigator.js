@@ -11,7 +11,6 @@ import UserProfile114618Navigator from '../features/UserProfile114618/navigator'
 import Settings114617Navigator from '../features/Settings114617/navigator';
 import Settings114615Navigator from '../features/Settings114615/navigator';
 import SignIn2114613Navigator from '../features/SignIn2114613/navigator';
-import BlankScreen9114360Navigator from '../features/BlankScreen9114360/navigator';
 import BlankScreen8114359Navigator from '../features/BlankScreen8114359/navigator';
 import BlankScreen7114358Navigator from '../features/BlankScreen7114358/navigator';
 import BlankScreen6114357Navigator from '../features/BlankScreen6114357/navigator';
@@ -34,7 +33,6 @@ UserProfile114618: { screen: UserProfile114618Navigator },
 Settings114617: { screen: Settings114617Navigator },
 Settings114615: { screen: Settings114615Navigator },
 SignIn2114613: { screen: SignIn2114613Navigator },
-BlankScreen9114360: { screen: BlankScreen9114360Navigator },
 BlankScreen8114359: { screen: BlankScreen8114359Navigator },
 BlankScreen7114358: { screen: BlankScreen7114358Navigator },
 BlankScreen6114357: { screen: BlankScreen6114357Navigator },
