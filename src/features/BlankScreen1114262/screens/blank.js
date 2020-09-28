@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = { Datepicker_5: new Date("09/28/2020") }
+  state = { Datepicker_5: new Date("09/28/2020"), Input_7: "", Input_9: "" }
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
@@ -38,6 +38,35 @@ export class _Blank extends React.Component {
         style={this.props.themedStyle.Datepicker_5}
         date={this.state.Datepicker_5}
         onSelect={nextValue => this.setState({ Datepicker_5: nextValue })}
+      />
+      <Input
+        placeholder="Project Name"
+        editable={false}
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_7}
+        value={this.state.Input_7}
+        onChangeText={nextValue => this.setState({ Input_7: nextValue })}
+      />
+      <Input
+        placeholder="Number of Gallons"
+        editable={true}
+        keyboardType="numeric"
+        textStyle={{
+          fontSize: 12,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_9}
+        value={this.state.Input_9}
+        onChangeText={nextValue => this.setState({ Input_9: nextValue })}
       />
     </View>
   )
@@ -72,7 +101,8 @@ export default Blank = withStyles(_Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0,
-    backgroundSize: "auto"
+    backgroundSize: "auto",
+    alignSelf: "center"
   },
   Image_3: {
     width: 300,
@@ -112,6 +142,68 @@ export default Blank = withStyles(_Blank, theme => ({
     fontStyle: "normal",
     fontWeight: "normal",
     borderColor: "#f20202",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_7: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_9: {
+    width: "100%",
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
     borderStyle: "solid",
     borderWidth: 0,
     borderLeftWidth: 0,
