@@ -1,6 +1,6 @@
 import axios from "axios"
 const baseOpsAPI = axios.create({
-  baseURL: "https://baseops-20792-prod.herokuapp.com/",
+  baseURL: "https://baseops-20792.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
