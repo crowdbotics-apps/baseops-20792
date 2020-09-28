@@ -22,7 +22,7 @@ export class _Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { Input_7: "", Input_11: "" }
 
   render = () => (
     <View style={this.props.themedStyle.View_1}>
@@ -34,13 +34,42 @@ export class _Blank extends React.Component {
         }}
         style={this.props.themedStyle.Image_3}
       />
+      <Text style={this.props.themedStyle.Text_5}>USER NAME</Text>
+      <Input
+        placeholder="Email"
+        editable={true}
+        textStyle={{
+          fontSize: 10,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "italic"
+        }}
+        style={this.props.themedStyle.Input_7}
+        value={this.state.Input_7}
+        onChangeText={nextValue => this.setState({ Input_7: nextValue })}
+      />
+      <Text style={this.props.themedStyle.Text_9}>PASWORD</Text>
+      <Input
+        placeholder="Sample text input placeholder"
+        editable={true}
+        textStyle={{
+          fontSize: 10,
+          color: "#000000",
+          textAlign: "left",
+          fontWeight: "normal",
+          fontStyle: "normal"
+        }}
+        style={this.props.themedStyle.Input_11}
+        value={this.state.Input_11}
+        onChangeText={nextValue => this.setState({ Input_11: nextValue })}
+      />
     </View>
   )
 }
 
 export default Blank = withStyles(_Blank, theme => ({
   View_1: {
-    marginLeft: 0,
     marginRight: 0,
     marginTop: 0,
     marginBottom: 0,
@@ -89,5 +118,114 @@ export default Blank = withStyles(_Blank, theme => ({
     borderTopWidth: 0,
     borderBottomWidth: 0,
     borderRadius: 0
+  },
+  Text_5: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_7: {
+    width: "90%",
+    marginLeft: 10,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 10,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "italic",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 2,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Text_9: {
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 12,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "italic",
+    fontWeight: "bold",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
+  },
+  Input_11: {
+    width: "90%",
+    marginLeft: 10,
+    marginRight: 0,
+    marginTop: 5,
+    marginBottom: 5,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 5,
+    paddingBottom: 5,
+    overflow: "visible",
+    fontSize: 10,
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 2,
+    borderRadius: 0,
+    textAlign: "left",
+    textAlignVertical: "center",
+    textDecorationLine: "none",
+    textTransform: "none",
+    lineHeight: 12,
+    letterSpacing: 0
   }
 }))
