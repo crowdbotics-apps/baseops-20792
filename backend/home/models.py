@@ -7,9 +7,10 @@ from django.db import models
 
 
 class CustomText(models.Model):
-    project = models.BigIntegerField(
-        null=True,
+    projectname = models.ManyToManyField(
+        "home.Fuel",
         blank=True,
+        related_name="customtext_projectname",
     )
 
     def __str__(self):
