@@ -43,3 +43,16 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Fuel(models.Model):
+    "Generated Model"
+    project = models.OneToOneField(
+        "home.CustomText",
+        on_delete=models.CASCADE,
+        related_name="fuel_project",
+    )
+    gallons = models.BigIntegerField(
+        null=True,
+        blank=True,
+    )
