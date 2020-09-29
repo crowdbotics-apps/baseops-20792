@@ -7,7 +7,7 @@ from django.db import models
 
 
 class CustomText(models.Model):
-    projectname = models.BigIntegerField(
+    project = models.BigIntegerField(
         null=True,
         blank=True,
     )
